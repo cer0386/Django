@@ -1,59 +1,73 @@
 from django.db import models
 from django.utils import timezone
+from django.core.validators import MinLengthValidator
 import datetime
 
 # Create your models here.
 
-class User(models.Model):
+class Position(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.position
+
+class Employee(models.Model):
     name = models.CharField(max_length=50)
     surname = models.CharField(max_length=50)
-    nickname = models.CharField(max_length=20)
-    joined = models.DateField('Joined community')
+    email = models.CharField(max_length=50)
+    joined = models.DateField('Joined company')
+    position = models.ForeignKey(Position, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name + ' ' + self.surname + ' ' + self.position
+
+class Customer(models.Model):
+    driverLicense = models.CharField(max_length=8, validators=[MinLengthValidator(8)], primary_key=True)
+    name = models.CharField(max_length=50)
+    surname = models.CharField(max_length=50)
+    email = models.CharField(max_length=50)
     city = models.CharField(max_length=50)
+    street = models.CharField(max_length=50)
+    houseNumber = models.IntegerField()
+    email = models.CharField(max_length=50)
+
 
     def __str__(self):
-        return self.name + ' ' + self.surname
+        return self.name + ' ' + self.surname + ' --- ' + self.driverLicense
 
-class Category(models.Model):
-    categoryID = models.IntegerField()
-    name = models.CharField(max_length=25)
-
-    def __str__(self):
-        return self.name
-
-class Product(models.Model):
-    userID = models.ForeignKey(User, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    name = models.CharField(max_length=40)
-    description = models.CharField(max_length=300)
-    width = models.DecimalField(max_digits=10, decimal_places=2)
-    height = models.DecimalField(max_digits=10, decimal_places=2)
-    depth = models.DecimalField(max_digits=10, decimal_places=2)
-    weight = models.DecimalField(max_digits=10, decimal_places=2)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    added = models.DateTimeField('Product published')
+class Model(models.Model):
+    brand = models.CharField(max_length=50)
+    type = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.name + ' ' + self.description
+        return self.brand + ' ' + self.type
 
-    def publishedRecently(self):
-        return self.added >= timezone.now() - datetime.timedelta(days=1)
+class Car(models.Model):
 
-class Comment(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    text = models.CharField(max_length=1000)
-    added = models.DateTimeField('Added Comment')
-
-    def __str__(self):
-        return self.product.name + ' : ' + self.text + ' ---' + self.user.name + ' ' + self.user.surname
-
-class Ranking(models.Model):
-    rankingIntValue = models.IntegerField(default=5)
-    text = models.CharField(max_length=20)
-    products = models.ManyToManyField(Product)
+    spz = models.CharField(max_length=7, validators=[MinLengthValidator(7)], primary_key=True)
+    model = models.ForeignKey(Model, on_delete=models.CASCADE)
+    bought = models.DateField('Car was bought')
+    stk = models.DateField('STK expiracy')
+    nOAccidents = models.IntegerField()
+    pricePerDay = models.DecimalField(max_digits=7, decimal_places=2)
 
     def __str__(self):
-        return self.text
+        return self.spz + ' : ' + self.model.type + ' ' + self.model.brand + ' --- ' + self.nOAccidents
+
+
+
+
+class Reservation(models.Model):
+    reservationNumber = models.IntegerField(primary_key=True)
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
+    cars = models.ManyToManyField(Car)
+    pickupD = models.DateField('Pickup date')
+    returnD = models.DateField('Return date')
+
+    def __str__(self):
+        return ("%s - %s %s - %s" % (self.reservationNumber, self.customer.name, self.customer.surname, self.employee.email))
+
+
 
 

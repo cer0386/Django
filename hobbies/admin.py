@@ -1,9 +1,10 @@
 from django.contrib import admin
-from .models import User, Product, Comment, Ranking, Category
+from .models import Customer,Car,Employee,Reservation,Model,Position
 
 # Register your models here.
-admin.site.register(User)
-admin.site.register(Product)
-admin.site.register(Comment)
-admin.site.register(Ranking)
-admin.site.register(Category)
+admin.site.register(Customer)
+admin.site.register(Car)
+admin.site.register(Employee)
+admin.site.register(Reservation)
+admin.site.register(Model)
+admin.site.register(Position)
