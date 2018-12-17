@@ -9,7 +9,7 @@ class Position(models.Model):
     name = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.position
+        return self.name
 
 class Employee(models.Model):
     name = models.CharField(max_length=50)
@@ -19,7 +19,7 @@ class Employee(models.Model):
     position = models.ForeignKey(Position, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name + ' ' + self.surname + ' ' + self.position
+        return self.name + ' ' + self.surname + ' - ' + self.position.name
 
 class Customer(models.Model):
     driverLicense = models.CharField(max_length=8, validators=[MinLengthValidator(8)], primary_key=True)
@@ -52,7 +52,7 @@ class Car(models.Model):
     pricePerDay = models.DecimalField(max_digits=7, decimal_places=2)
 
     def __str__(self):
-        return self.spz + ' : ' + self.model.type + ' ' + self.model.brand + ' --- ' + self.nOAccidents
+        return (('%s : ' + self.model.type + ' ' + self.model.brand + ' --- %s') % (self.spz, self.nOAccidents))
 
 
 
