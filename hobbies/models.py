@@ -14,9 +14,13 @@ class User(models.Model):
     def __str__(self):
         return self.name + ' ' + self.surname
 
+class Category(models.Model):
+    categoryID = models.IntegerField()
+    name = models.CharField(max_length=25)
+
 class Product(models.Model):
     userID = models.ForeignKey(User, on_delete=models.CASCADE)
-    category = models.CharField(max_length=30)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     name = models.CharField(max_length=40)
     description = models.CharField(max_length=300)
     width = models.IntegerField()
