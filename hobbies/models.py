@@ -18,12 +18,15 @@ class Category(models.Model):
     categoryID = models.IntegerField()
     name = models.CharField(max_length=25)
 
+    def __str__(self):
+        return self.name
+
 class Product(models.Model):
     userID = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     name = models.CharField(max_length=40)
     description = models.CharField(max_length=300)
-    width = models.IntegerField()
+    width = models.DecimalField(max_digits=10, decimal_places=2)
     height = models.DecimalField(max_digits=10, decimal_places=2)
     depth = models.DecimalField(max_digits=10, decimal_places=2)
     weight = models.DecimalField(max_digits=10, decimal_places=2)
@@ -43,7 +46,7 @@ class Comment(models.Model):
     added = models.DateTimeField('Added Comment')
 
     def __str__(self):
-        return self.product + ' ' + self.text + ' ' + self.user
+        return self.product.name + ' : ' + self.text + ' ---' + self.user.name + ' ' + self.user.surname
 
 class Ranking(models.Model):
     rankingIntValue = models.IntegerField(default=5)
