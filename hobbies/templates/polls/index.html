@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autopújčovna</title>
+</head>
+<body>
+{% if list %}
+    <ul>
+    {% for e in list %}
+        <li><a href="{% url 'detail' e.reservationNumber %}">{{ e }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No reservation are available.</p>
+{% endif %}
+</body>
+</html>
