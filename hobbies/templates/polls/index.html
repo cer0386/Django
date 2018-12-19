@@ -5,14 +5,23 @@
     <title>Autopújčovna</title>
 </head>
 <body>
-{% if list %}
+{% if reservations %}
     <ul>
-    {% for e in list %}
-        <li><a href="{% url 'detail' e.reservationNumber %}">{{ e }}</a></li>
+    {% for reservation in reservations %}
+        <li><a href="{% url 'reservation_detail' reservation.reservationNumber %}">{{ reservation }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No reservation are available.</p>
+{% endif %}
+{% if employees %}
+    <ul>
+    {% for employee in employees %}
+        <li><a href="{% url 'employee_detail' employee.email %}">{{ employee }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No employee are available.</p>
 {% endif %}
 </body>
 </html>
