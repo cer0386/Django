@@ -5,6 +5,7 @@
     <title>Autopújčovna</title>
 </head>
 <body>
+<h4>Reservations</h4>
 {% if reservations %}
     <ul>
     {% for reservation in reservations %}
@@ -14,14 +15,55 @@
 {% else %}
     <p>No reservation are available.</p>
 {% endif %}
+<h4>Employees</h4>
 {% if employees %}
     <ul>
     {% for employee in employees %}
-        <li><a href="{% url 'employee_detail' employee.email %}">{{ employee }}</a></li>
+        <li><a href="{% url 'employee_detail' employee.id %}">{{ employee }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No employee are available.</p>
+{% endif %}
+<h4>Cars</h4>
+{% if cars %}
+    <ul>
+    {% for car in cars %}
+        <li><a href="{% url 'car_detail' car.spz %}">{{ car }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No car are available.</p>
+{% endif %}
+<h4>Models</h4>
+{% if models %}
+    <ul>
+    {% for model in models %}
+        <li><a href="{% url 'model_detail' model.id %}">{{ model }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No models are available.</p>
+{% endif %}
+<h4>Customers</h4>
+{% if customers %}
+    <ul>
+    {% for customer in customers %}
+        <li><a href="{% url 'customer_detail' customer.driverLicense %}">{{ customer }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No customers are available.</p>
+{% endif %}
+<h4>Positions</h4>
+{% if positions %}
+    <ul>
+    {% for position in positions %}
+        <li><a href="{% url 'position_detail' position.id %}">{{ position }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No positions are available.</p>
 {% endif %}
 </body>
 </html>
