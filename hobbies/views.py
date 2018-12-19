@@ -32,7 +32,7 @@ def model_detail(request, model_id):
     return render(request, 'polls/model/detail.html', {'model': model})
 
 def customer_detail(request, customer_id):
-    customer = get_object_or_404(Model, pk=customer_id)
+    customer = get_object_or_404(Customer, pk=customer_id)
     return render(request, 'polls/customer/detail.html', {'customer': customer})
 
 def position_detail(request, position_id):
