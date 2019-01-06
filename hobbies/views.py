@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
-from .models import Reservation, Employee, Car, Model, Customer, Position, Reserv_form
+from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
 from .forms import CustormerForm
 from django.views.generic import TemplateView
 from django.shortcuts import redirect
