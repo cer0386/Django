@@ -1,5 +1,5 @@
 from django import forms
-from .models import Customer, ReservForm
+from .models import Customer, ReservForm, Car
 
 
 class CustormerForm(forms.ModelForm):
@@ -16,10 +16,10 @@ class CustormerForm(forms.ModelForm):
         fields = '__all__'
 
 
-class Reservation(forms.ModelForm):
+class ReservationForm(forms.ModelForm):
     reservationID_temp = forms.IntegerField(label='Reservation ID')
-    customer = forms.CharField(label='Customer', max_length=50)
-    cars = forms.CharField(label='Cars')
+    customer = forms.ModelMultipleChoiceField(queryset=Customer.objects.all())
+    cars = forms.ModelMultipleChoiceField(queryset=Car.objects.all())
     pickupD = forms.DateField(label='Pickup')
     returnD = forms.DateField(label='Return')
 

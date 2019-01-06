@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
-from .forms import CustormerForm, Reservation
+from .forms import CustormerForm, ReservationForm
 from django.views.generic import TemplateView
 from django.shortcuts import redirect
 
@@ -74,14 +74,18 @@ def registration(request):
 
 def reservation(request):
     if request.method == 'POST':
-        form = Reservation(request.POST)
+        form = ReservationForm(request.POST)
+        carPK = form.cars
+        customerPK = form.customer
+        form.cars = Car.object.get(pk=carPK)
+        form.customer = Customer.object.get(pk=customerPK)
         if form.is_valid():
             form.save()
             return redirect('/hobbies/')
         else:
             return HttpResponse('<h1>ALREADY RESERVED</h1>')
     else:
-        form = Reservation()
+        form = ReservationForm()
         return render(request, 'polls/forms/reservation.html', {'form': form})
 
 

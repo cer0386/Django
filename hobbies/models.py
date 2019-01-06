@@ -31,9 +31,9 @@ class Customer(models.Model):
     street = models.CharField(max_length=50)
     houseNumber = models.IntegerField()
 
-
     def __str__(self):
-        return self.name + ' ' + self.surname + ' --- ' + self.driverLicense
+        return self.driverLicense
+
 
 class Model(models.Model):
     brand = models.CharField(max_length=50)
@@ -51,10 +51,11 @@ class Car(models.Model):
     nOAccidents = models.IntegerField()
     pricePerDay = models.DecimalField(max_digits=7, decimal_places=2)
 
-    def __str__(self):
+    def show(self):
         return (('%s : ' + self.model.type + ' ' + self.model.brand + ' --- %s') % (self.spz, self.nOAccidents))
 
-
+    def __str__(self):
+        return self.spz
 
 
 class Reservation(models.Model):
@@ -66,7 +67,7 @@ class Reservation(models.Model):
     returnD = models.DateField('Return date')
 
     def __str__(self):
-        return ("%s - %s %s - %s" % (self.reservationNumber, self.customer.name, self.customer.surname, self.employee.email))
+        return "%s - %s %s - %s" % (self.reservationNumber, self.customer.name, self.customer.surname, self.employee.email)
 
 
 class ReservForm(models.Model):
@@ -77,5 +78,5 @@ class ReservForm(models.Model):
     returnD = models.DateField('Return date')
 
     def __str__(self):
-        return ("%s - %s" % (self.reservationID_temp,self.cars))
+        return "%s - %s" % (self.reservationID_temp, self.cars)
 
