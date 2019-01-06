@@ -1,6 +1,10 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect
-from .models import Reservation, Employee, Car, Model, Customer, Position, Reserv_form, CustormerRegistration
+from django.http import HttpResponse
+from .models import Reservation, Employee, Car, Model, Customer, Position, Reserv_form
+from .forms import CustormerForm
+from django.views.generic import TemplateView
+from django.shortcuts import redirect
 
 
 
@@ -58,13 +62,17 @@ def position_detail(request, position_id):
 
 # Kdyz dorazime k tomuhle view s GET metodou, tak se vytvoří prázdná instance formu a uloží se contextu templatu a vyrenderuje se
 # Kdyz s POST, tak vytvoří form a nahraje data z requestu
+
 def registration(request):
     if request.method == 'POST':
-        form = CustormerRegistration(request.POST)
+        form = CustormerForm(request.POST)
         if form.is_valid():
             form.save()
-            # name = form.cleaned_data.get('name')
-            return HttpResponseRedirect('polls/index.html')
+            return redirect('/hobbies/')
+        else:
+            return HttpResponse('<h1>ALREADY REGISTERED</h1>')
     else:
-        form = CustormerRegistration()
+        form = CustormerForm()
         return render(request, 'polls/forms/CustomerRegistration.html', {'form': form})
+
+

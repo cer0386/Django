@@ -1,10 +1,9 @@
 from django.urls import path
-
-
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    url(r'^$', views.index, name='index'),
     path('forms/reservation/', views.reserv_form, name='reserv_form'),
     path('forms/CustomerRegistration/', views.registration, name='registration'),
     path('car/<int:car_id>/', views.car_detail, name='car_detail'),
