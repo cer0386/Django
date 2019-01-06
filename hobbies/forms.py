@@ -1,5 +1,5 @@
 from django import forms
-from .models import Customer, Car, Model, ReservForm
+from .models import Customer, Car, Model, ReservForm, Reservation, Employee
 
 
 class CustormerForm(forms.ModelForm):
@@ -38,3 +38,18 @@ class ReservationForm(forms.ModelForm):
     class Meta:
         model = ReservForm
         fields = '__all__'
+
+
+class ReservationApproved(forms.ModelForm):
+    reservationNumber = forms.IntegerField(label='Reservation ID')
+    employee = forms.ModelMultipleChoiceField(queryset=Employee.objects.all())
+
+    customer = forms.HiddenInput
+    cars = forms.HiddenInput
+    pickupD = forms.HiddenInput
+    returnD = forms.HiddenInput
+
+    class Meta:
+        model = Reservation
+        fields = ['employee', 'reservationNumber']
+

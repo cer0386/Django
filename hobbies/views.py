@@ -2,10 +2,9 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
-from .forms import CustormerForm, CarForm, ReservationForm
+from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved
 from django.views.generic import TemplateView
 from django.shortcuts import redirect
-
 
 
 # Create your views here.
@@ -33,7 +32,7 @@ def reserv_form(request):
 
 def reservation_detail(request, reservation_id):
     reservation = get_object_or_404(Reservation, pk=reservation_id)
-    return render(request, 'polls/forms/reservation/detail.html', {'reservation': reservation})
+    return render(request, 'polls/reservation/detail.html', {'reservation': reservation})
 
 
 def employee_detail(request, employee_id):
@@ -61,11 +60,26 @@ def position_detail(request, position_id):
     return render(request, 'polls/position/detail.html', {'position': position})
 
 
+##forms
+
+
 def reservform_detail(request, resv_id):
     reservation = get_object_or_404(ReservForm, pk=resv_id)
-    return render(request, 'polls/TempReservation/detail.html', {'reservation': reservation})
-
-##form
+    if request.method == 'POST':
+        form = ReservationApproved(request.POST)
+        form.customer = reservation.customer
+        form.returnD = reservation.returnD
+        form.pickupD = reservation.pickupD
+        form.cars = reservation.cars
+        if form.is_valid():
+            form.save()
+            ReservForm.objects.get(pk=resv_id).delete()
+            return redirect('/hobbies/')
+        else:
+            return HttpResponse('<h1>ALREADY RESERVED</h1>')
+    else:
+        form = ReservationApproved()
+        return render(request, 'polls/TempReservation/detail.html', {'reservation': reservation, 'form': form})
 
 
 # Kdyz dorazime k tomuhle view s GET metodou, tak se vytvoří prázdná instance formu a uloží se contextu templatu a vyrenderuje se

@@ -57,14 +57,16 @@ class Car(models.Model):
 
 class Reservation(models.Model):
     reservationNumber = models.IntegerField(primary_key=True)
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
-    employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
+    #customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    #employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
+    customer = models.CharField(max_length=150)
+    employee = models.CharField(max_length=150)
     cars = models.ManyToManyField(Car)
-    pickupD = models.DateField('Pickup date')
-    returnD = models.DateField('Return date')
+    pickupD = models.DateField('Pickup date', null=True)
+    returnD = models.DateField('Return date', null=True)
 
     def __str__(self):
-        return "%s - %s %s - %s" % (self.reservationNumber, self.customer.name, self.customer.surname, self.employee.email)
+        return "%s - %s - %s" % (self.reservationNumber, self.customer, self.employee)
 
 
 class ReservForm(models.Model):

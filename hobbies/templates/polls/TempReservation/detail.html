@@ -14,7 +14,11 @@
     <li>{{ reservation.returnD }}</li>
 </ul>
 
-
+<form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+     <input type="submit" value="Approve">
+</form>
 
 </body>
 </html>
