@@ -1,6 +1,8 @@
 from django.shortcuts import get_object_or_404, render
+from django.http import HttpResponseRedirect
+from .models import Reservation, Employee, Car, Model, Customer, Position, Reserv_form, CustormerRegistration
 
-from .models import Reservation, Employee, Car, Model, Customer, Position, Reserv_form
+
 
 # Create your views here.
 def index(request):
@@ -20,13 +22,13 @@ def reserv_form(request):
     return render(request, 'polls/forms/reservation.html', {'cars': cars})
 
 
-def reserv_forward(request):
-    Reserv_form.customer =
+# def reserv_forward(request):
+# Reserv_form.customer =
 
 
 def reservation_detail(request, reservation_id):
     reservation = get_object_or_404(Reservation, pk=reservation_id)
-    return render(request, 'polls/reservation/detail.html', {'reservation': reservation})
+    return render(request, 'polls/forms/reservation/detail.html', {'reservation': reservation})
 
 
 def employee_detail(request, employee_id):
@@ -52,3 +54,17 @@ def customer_detail(request, customer_id):
 def position_detail(request, position_id):
     position = get_object_or_404(Position, pk=position_id)
     return render(request, 'polls/position/detail.html', {'position': position})
+
+
+# Kdyz dorazime k tomuhle view s GET metodou, tak se vytvoří prázdná instance formu a uloží se contextu templatu a vyrenderuje se
+# Kdyz s POST, tak vytvoří form a nahraje data z requestu
+def registration(request):
+    if request.method == 'POST':
+        form = CustormerRegistration(request.POST)
+        if form.is_valid():
+            form.save()
+            # name = form.cleaned_data.get('name')
+            return HttpResponseRedirect('polls/index.html')
+    else:
+        form = CustormerRegistration()
+        return render(request, 'polls/forms/CustomerRegistration.html', {'form': form})

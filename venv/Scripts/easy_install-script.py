@@ -1,4 +1,4 @@
-#!D:\vyuka\vs\3\Projekty1s3r\spja\hobby\venv\Scripts\python.exe
+#!D:\vyuka\vs\3\Projekty1s3r\spja\Django\venv\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'setuptools==39.1.0','console_scripts','easy_install'
 __requires__ = 'setuptools==39.1.0'
 import re

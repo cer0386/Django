@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set "VIRTUAL_ENV=D:\vyuka\vs\3\Projekty1s3r\spja\hobby\venv"
+set "VIRTUAL_ENV=D:\vyuka\vs\3\Projekty1s3r\spja\Django\venv"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"

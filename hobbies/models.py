@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.core.validators import MinLengthValidator
 import datetime
+from django import forms
 
 # Create your models here.
 
@@ -29,7 +30,6 @@ class Customer(models.Model):
     city = models.CharField(max_length=50)
     street = models.CharField(max_length=50)
     houseNumber = models.IntegerField()
-    email = models.CharField(max_length=50)
 
 
     def __str__(self):
@@ -78,3 +78,4 @@ class Reserv_form(models.Model):
 
     def __str__(self):
         return ("%s - %s - $s/$s" % (self.reservationID_temp,self.cars, self.pickupD, self.returnD))
+
