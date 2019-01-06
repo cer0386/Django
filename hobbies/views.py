@@ -1,8 +1,8 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
-from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
-from .forms import CustormerForm, ReservationForm
+from .models import Reservation, Employee, Car, Model, Customer, Position
+from .forms import CustormerForm, CarForm
 from django.views.generic import TemplateView
 from django.shortcuts import redirect
 
@@ -24,6 +24,10 @@ def index(request):
 def reserv_form(request):
     cars = Car.objects.order_by('-spz')[:5]
     return render(request, 'polls/forms/reservation.html', {'cars': cars})
+
+
+# def reserv_forward(request):
+# Reserv_form.customer =
 
 
 def reservation_detail(request, reservation_id):
@@ -72,21 +76,16 @@ def registration(request):
         return render(request, 'polls/forms/CustomerRegistration.html', {'form': form})
 
 
-def reservation(request):
+def addCar(request):
     if request.method == 'POST':
-        form = ReservationForm(request.POST)
-        carPK = form.cars
-        customerPK = form.customer
-        form.cars = Car.object.get(pk=carPK)
-        form.customer = Customer.object.get(pk=customerPK)
+        form = CarForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('/hobbies/')
         else:
-            return HttpResponse('<h1>ALREADY RESERVED</h1>')
+            return HttpResponse('<h1>ALREADY IN DATABASE</h1>')
     else:
-        form = ReservationForm()
-        return render(request, 'polls/forms/reservation.html', {'form': form})
-
+        form = CustormerForm()
+        return render(request, 'polls/forms/AddCar.html', {'form': form})
 
 
