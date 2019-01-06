@@ -40,8 +40,8 @@ def employee_detail(request, employee_id):
     return render(request, 'polls/employee/detail.html', {'employee': employee})
 
 
-def car_detail(request, car_id):
-    car = get_object_or_404(Car, pk=car_id)
+def car_detail(request, car_spz):
+    car = get_object_or_404(Car, pk=car_spz)
     return render(request, 'polls/car/detail.html', {'car': car})
 
 
@@ -98,7 +98,7 @@ def registration(request):
         return render(request, 'polls/forms/CustomerRegistration.html', {'form': form})
 
 
-def addCar(request):
+def add_car(request):
     if request.method == 'POST':
         form = CarForm(request.POST)
         if form.is_valid():
@@ -107,7 +107,7 @@ def addCar(request):
         else:
             return HttpResponse('<h1>ALREADY IN DATABASE</h1>')
     else:
-        form = CustormerForm()
+        form = CarForm()
         return render(request, 'polls/forms/AddCar.html', {'form': form})
 
 
