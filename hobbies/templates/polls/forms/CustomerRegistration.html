@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <title>Registration</title>
 
-    <h2>Customer Registration</h2>
-
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-
-        <input type="submit" value="Signup">
-    </form>
-
 
 </head>
 <body>
+    <h2>Customer Registration</h2>
 
+    <form method="post", id="customer">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <input type="submit" value="Signup">
+    </form>
 </body>
 </html>

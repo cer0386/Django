@@ -1,6 +1,9 @@
 from django import forms
 from .models import Customer, Car, Model, ReservForm
 
+class DateInput(forms.DateInput):
+    input_type = 'date'
+
 
 class CustormerForm(forms.ModelForm):
     driverLicense = forms.CharField(label='Driver License', max_length=8)
@@ -17,15 +20,14 @@ class CustormerForm(forms.ModelForm):
 
 
 class CarForm(forms.ModelForm):
-    spz = forms.CharField(label='SPZ', max_length=7)
-    model = forms.ModelChoiceField(label='Car Model', queryset=Model.objects.all())
-    bought = forms.DateField(label='Date of purchase')
-    stk = forms.DateField(label='STK expiracy')
-    nOAccidents = forms.IntegerField(label='Number of accidents')
 
     class Meta:
         model = Car
-        fields = '__all__'
+        fields = ['spz', 'model', 'bought', 'stk', 'nOAccidents', 'pricePerDay']
+        widgets = {
+            'bought': DateInput(),
+            'stk': DateInput(),
+        }
 
 
 class ReservationForm(forms.ModelForm):
