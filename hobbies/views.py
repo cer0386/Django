@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
-from .forms import CustormerForm
+from .forms import CustormerForm, Reservation
 from django.views.generic import TemplateView
 from django.shortcuts import redirect
 
@@ -24,10 +24,6 @@ def index(request):
 def reserv_form(request):
     cars = Car.objects.order_by('-spz')[:5]
     return render(request, 'polls/forms/reservation.html', {'cars': cars})
-
-
-# def reserv_forward(request):
-# Reserv_form.customer =
 
 
 def reservation_detail(request, reservation_id):
@@ -74,5 +70,19 @@ def registration(request):
     else:
         form = CustormerForm()
         return render(request, 'polls/forms/CustomerRegistration.html', {'form': form})
+
+
+def reservation(request):
+    if request.method == 'POST':
+        form = Reservation(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/hobbies/')
+        else:
+            return HttpResponse('<h1>ALREADY RESERVED</h1>')
+    else:
+        form = Reservation()
+        return render(request, 'polls/forms/reservation.html', {'form': form})
+
 
 

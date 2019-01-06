@@ -2,43 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Make reservation</title>
+    <title>Reservation</title>
+
+    <h2>Reservation</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <input type="submit" value="Reserve">
+    </form>
+
+
 </head>
 <body>
-    <h2>Make reservation</h2>
-    <div>
-        <div>
-            <label class="required" for="id_reservationID_temp">ReservationID:</label>
-            <input type="number" name="reservationID_temp" class="vIntegerField" required="" id="id_reservationID_temp">
-        </div>
-        <div class="form-row field-cars">
-                <div>
-                    <label class="required" for="id_cars">Cars:</label>
-                    <div class="related-widget-wrapper">
-                        {% if cars %}
-                        <select name="cars" required="" id="id_cars" multiple="">
-                            {% for car in cars%}
-                                <option value=car.id>{{car}}</option>
-                            {% endfor %}
-                        </select>
-                        {% else %}
-                            <p>No cars available</p>
-                        {% endif %}
-                    </div>
-                </div>
-        </div>
-        <div class="form-row field-pickupD">
-            <div>
-                <label class="required" for="id_pickupD">Pickup date:</label>
-                <input type="text" name="pickupD" class="vDateField" size="10" required="" id="id_pickupD">
-            </div>
-        </div>
-        <div class="form-row field-returnD">
-            <div>
-                <label class="required" for="id_returnD">Return date:</label>
-                 <input type="text" name="returnD" class="vDateField" size="10" required="" id="id_returnD">
-            </div>
-        </div>
-    </div>
+
 </body>
 </html>

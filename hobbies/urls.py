@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    path('forms/reservation/', views.reserv_form, name='reserv_form'),
+    path('forms/reservation/', views.reservation, name='reservation'),
     path('forms/CustomerRegistration/', views.registration, name='registration'),
     path('car/<int:car_id>/', views.car_detail, name='car_detail'),
     path('customer/<slug:customer_id>/', views.customer_detail, name='customer_detail'),
