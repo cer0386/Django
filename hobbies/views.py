@@ -1,8 +1,8 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
-from .models import Reservation, Employee, Car, Model, Customer, Position
-from .forms import CustormerForm, CarForm
+from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
+from .forms import CustormerForm, CarForm, ReservationForm
 from django.views.generic import TemplateView
 from django.shortcuts import redirect
 
@@ -16,8 +16,9 @@ def index(request):
     models = Model.objects.order_by('-id')[:5]
     positions = Position.objects.order_by('-id')[:5]
     customers = Customer.objects.order_by('-driverLicense')[:5]
+    reservform = ReservForm.objects.order_by('-reservationID_temp')[:5]
     context = {'reservations': reservations, 'employees': employees, 'cars': cars, 'models': models,
-               'customers': customers, 'positions': positions}
+               'customers': customers, 'positions': positions, 'reservform': reservform}
     return render(request, 'polls/index.html', context)
 
 
@@ -60,6 +61,13 @@ def position_detail(request, position_id):
     return render(request, 'polls/position/detail.html', {'position': position})
 
 
+def reservform_detail(request, resv_id):
+    reservation = get_object_or_404(ReservForm, pk=resv_id)
+    return render(request, 'polls/TempReservation/detail.html', {'reservation': reservation})
+
+##form
+
+
 # Kdyz dorazime k tomuhle view s GET metodou, tak se vytvoří prázdná instance formu a uloží se contextu templatu a vyrenderuje se
 # Kdyz s POST, tak vytvoří form a nahraje data z requestu
 
@@ -88,4 +96,16 @@ def addCar(request):
         form = CustormerForm()
         return render(request, 'polls/forms/AddCar.html', {'form': form})
 
+
+def reservation(request):
+    if request.method == 'POST':
+        form = ReservationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/hobbies/')
+        else:
+            return HttpResponse('<h1>ALREADY RESERVED</h1>')
+    else:
+        form = ReservationForm()
+        return render(request, 'polls/forms/reservation.html', {'form': form})
 

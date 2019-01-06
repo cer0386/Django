@@ -5,9 +5,20 @@
     <title>Autopújčovna</title>
 </head>
 <body>
-<h4><a href="/hobbies/forms/reservation/"> Reservations</a></h4>
+<h4><a href="/hobbies/forms/reservation/"> Creare reservations</a></h4>
 <h4><a href="/hobbies/forms/CustomerRegistration"> Customer Registration </a></h4>
 <h4><a href="/hobbies/forms/AddCar"> Add new car </a></h4>
+<h4>Temp reservations</h4>
+{% if reservform %}
+    <ul>
+    {% for form in reservform %}
+        <li><a href="{% url 'reservform_detail' form.reservationID_temp %}">{{ form }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No reservation are available.</p>
+{% endif %}
+<h4>Reservations</h4>
 {% if reservations %}
     <ul>
     {% for reservation in reservations %}

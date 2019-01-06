@@ -51,11 +51,8 @@ class Car(models.Model):
     nOAccidents = models.IntegerField()
     pricePerDay = models.DecimalField(max_digits=7, decimal_places=2)
 
-    def show(self):
-        return (('%s : ' + self.model.type + ' ' + self.model.brand + ' --- %s') % (self.spz, self.nOAccidents))
-
     def __str__(self):
-        return self.spz
+        return (('%s : ' + self.model.type + ' ' + self.model.brand + ' --- %s') % (self.spz, self.nOAccidents))
 
 
 class Reservation(models.Model):
@@ -72,11 +69,11 @@ class Reservation(models.Model):
 
 class ReservForm(models.Model):
     reservationID_temp = models.IntegerField(primary_key=True)
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
-    cars = models.ManyToManyField(Car)
+    customer = models.CharField(max_length=150)
+    cars = models.CharField(max_length=150)
     pickupD = models.DateField('Pickup date')
     returnD = models.DateField('Return date')
 
     def __str__(self):
-        return "%s - %s" % (self.reservationID_temp, self.cars)
+        return "%s - %s" % (self.reservationID_temp, self.customer)
 

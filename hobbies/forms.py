@@ -1,6 +1,5 @@
 from django import forms
-from .models import Customer, Car, Model
-
+from .models import Customer, Car, Model, ReservForm
 
 
 class CustormerForm(forms.ModelForm):
@@ -16,6 +15,7 @@ class CustormerForm(forms.ModelForm):
         model = Customer
         fields = '__all__'
 
+
 class CarForm(forms.ModelForm):
     spz = forms.CharField(label='SPZ', max_length=7)
     model = forms.ModelChoiceField(label='Car Model', queryset=Model.objects.all())
@@ -27,3 +27,14 @@ class CarForm(forms.ModelForm):
         model = Car
         fields = '__all__'
 
+
+class ReservationForm(forms.ModelForm):
+    reservationID_temp = forms.IntegerField(label='Reservation ID')
+    customer = forms.ModelMultipleChoiceField(queryset=Customer.objects.all())
+    cars = forms.ModelMultipleChoiceField(queryset=Car.objects.all())
+    pickupD = forms.DateField(label='Pickup')
+    returnD = forms.DateField(label='Return')
+
+    class Meta:
+        model = ReservForm
+        fields = '__all__'
