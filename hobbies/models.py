@@ -69,5 +69,12 @@ class Reservation(models.Model):
         return ("%s - %s %s - %s" % (self.reservationNumber, self.customer.name, self.customer.surname, self.employee.email))
 
 
+class Reserv_form(models.Model):
+    reservationID_temp = models.IntegerField(primary_key=True)
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    cars = models.ManyToManyField(Car)
+    pickupD = models.DateField('Pickup date')
+    returnD = models.DateField('Return date')
 
-
+    def __str__(self):
+        return ("%s - %s - $s/$s" % (self.reservationID_temp,self.cars, self.pickupD, self.returnD))
