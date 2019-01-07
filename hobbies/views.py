@@ -40,8 +40,8 @@ def employee_detail(request, employee_id):
     return render(request, 'polls/employee/detail.html', {'employee': employee})
 
 
-def car_detail(request, car_spz):
-    car = get_object_or_404(Car, pk=car_spz)
+def car_detail(request, car_id):
+    car = get_object_or_404(Car, pk=car_id)
     return render(request, 'polls/car/detail.html', {'car': car})
 
 
