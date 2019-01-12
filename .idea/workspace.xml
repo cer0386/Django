@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d750f1a5-0320-4b93-857b-d355a4ac32b4" name="Default" comment="Functional Reservation">
+    <list default="true" id="d750f1a5-0320-4b93-857b-d355a4ac32b4" name="Default" comment="Database rework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0002_auto_20181217_1452.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0003_auto_20181217_1602.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0004_auto_20181217_1729.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0005_auto_20181217_2048.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0006_reserv_form.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0007_auto_20190106_2054.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0008_auto_20190106_2136.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0011_merge_20190107_1244.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/reservation/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/reservation/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/urls.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/hobbies/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="29" selection-end-column="24" />
+              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="29" selection-end-column="24" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -69,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="408">
               <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
             </state>
           </provider>
@@ -78,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hobbies/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+            <state relative-caret-position="833">
+              <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -90,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hobbies/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+            <state relative-caret-position="527">
+              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -102,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hobbies/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="17">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -123,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hobbies/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="170">
               <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -421,6 +406,7 @@
       <workItem from="1546704890144" duration="1417000" />
       <workItem from="1546774798415" duration="28755000" />
       <workItem from="1547032839198" duration="6096000" />
+      <workItem from="1547298043535" duration="252000" />
     </task>
     <task id="LOCAL-00001" summary="Nothing at al..">
       <created>1545248814915</created>
@@ -457,11 +443,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546803566788</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Database rework">
+      <created>1547298287736</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547298287736</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37765000" />
+    <option name="totallyTimeSpent" value="38017000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,9 +467,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5007299" side_tool="true" weight="0.21801706" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49927008" visible="true" weight="0.21801706" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49927008" visible="true" weight="0.22014925" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="manage.py@Django-project" order="0" sideWeight="0.4978678" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50373137" side_tool="true" weight="0.32827735" />
@@ -558,7 +552,8 @@
     <MESSAGE value="Customer Reservation" />
     <MESSAGE value="Customer Reservation Functional with saving aaaaaaaaaaaaaa" />
     <MESSAGE value="Functional Reservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functional Reservation" />
+    <MESSAGE value="Database rework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database rework" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -687,39 +682,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/AddModel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hobby/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-184" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hobbies/admin.py">
+    <entry file="file://$PROJECT_DIR$/hobbies/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="374">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="29" selection-end-column="24" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/reservation/detail.html">
+    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="408">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hobbies/urls.py">
+    <entry file="file://$PROJECT_DIR$/hobbies/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="833">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -728,38 +716,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        <state relative-caret-position="527">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hobbies/models.py">
+    <entry file="file://$PROJECT_DIR$/hobbies/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="53" column="22" lean-forward="true" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        <state relative-caret-position="17">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/AddModel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/index.html">
+    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/reservation/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hobbies/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
         </state>
       </provider>
     </entry>
