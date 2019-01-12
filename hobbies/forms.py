@@ -55,15 +55,3 @@ class ReservationApproved(forms.ModelForm):
         model = Reservation
         fields = ['employee', 'reservationNumber']
 
-
-class PriceCalculator(forms.ModelForm):
-    cars = forms.ModelMultipleChoiceField(queryset=Car.object.all())
-
-    class Meta:
-        model = Car
-        widgets = {
-            'bought': DateInput(),
-            'stk': DateInput(),
-        }
-
-
