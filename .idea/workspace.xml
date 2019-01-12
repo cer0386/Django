@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d750f1a5-0320-4b93-857b-d355a4ac32b4" name="Default" comment="Functional Reservation">
+    <list default="true" id="d750f1a5-0320-4b93-857b-d355a4ac32b4" name="Default" comment="Superuser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0002_auto_20181217_1452.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0003_auto_20181217_1602.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0004_auto_20181217_1729.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0005_auto_20181217_2048.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0006_reserv_form.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0007_auto_20190106_2054.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0008_auto_20190106_2136.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/migrations/0011_merge_20190107_1244.py" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Django_project$manage.coverage" NAME="manage Coverage Results" MODIFIED="1547307082797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Django_project$manage.coverage" NAME="manage Coverage Results" MODIFIED="1547307586473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Django_project$views.coverage" NAME="views Coverage Results" MODIFIED="1546784525437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hobbies" />
     <SUITE FILE_PATH="coverage/Django_project$0009_auto_20190109_1331.coverage" NAME="0009_auto_20190109_1331 Coverage Results" MODIFIED="1547037716016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hobbies/migrations" />
     <SUITE FILE_PATH="coverage/Django_project$0001_initial.coverage" NAME="0001_initial Coverage Results" MODIFIED="1547037816667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hobbies/migrations" />
@@ -369,7 +359,7 @@
       <workItem from="1545257995522" duration="1096000" />
       <workItem from="1546704890144" duration="1417000" />
       <workItem from="1546774798415" duration="28755000" />
-      <workItem from="1547307079062" duration="243000" />
+      <workItem from="1547307079062" duration="1107000" />
     </task>
     <task id="LOCAL-00001" summary="Nothing at al..">
       <created>1545248814915</created>
@@ -406,11 +396,25 @@
       <option name="project" value="LOCAL" />
       <updated>1546803566788</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Database rework MK II.">
+      <created>1547307342495</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547307342495</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Superuser">
+      <created>1547307559157</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547307559157</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31518000" />
+    <option name="totallyTimeSpent" value="32382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,14 +432,14 @@
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22441365" />
       <window_info id="Structure" order="2" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="manage.py@Django-project" order="0" sideWeight="0.4978678" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="manage.py@Django-project" order="0" sideWeight="0.4978678" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50373137" side_tool="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49626866" weight="0.32827735" />
       <window_info anchor="bottom" id="Python Console" order="3" sideWeight="0.4968017" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" sideWeight="0.49946696" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49307036" weight="0.25785482" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49307036" visible="true" weight="0.25785482" />
       <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49946696" weight="0.33044422" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -508,7 +512,9 @@
     <MESSAGE value="Customer Reservation" />
     <MESSAGE value="Customer Reservation Functional with saving aaaaaaaaaaaaaa" />
     <MESSAGE value="Functional Reservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functional Reservation" />
+    <MESSAGE value="Database rework MK II." />
+    <MESSAGE value="Superuser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Superuser" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
