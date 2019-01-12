@@ -1,9 +1,10 @@
-from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
-from django.shortcuts import redirect
-
-from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved, PriceCalculator
+from django.http import HttpResponseRedirect
+from django.http import HttpResponse
 from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
+from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved
+from django.views.generic import TemplateView
+from django.shortcuts import redirect
 
 
 # Create your views here.
@@ -81,17 +82,6 @@ def reservform_detail(request, resv_id):
         return render(request, 'polls/TempReservation/detail.html', {'reservation': reservation, 'form': form})
 
 
-def calculator(request):
-    if request.method == 'POST':
-        form = PriceCalculator(request.POST)
-        if form.is_valid():
-            #form.save()
-            return redirect('/hobbies/')
-        else:
-            return HttpResponse('<h1>ALREADY REGISTERED</h1>')
-    else:
-        form = PriceCalculator()
-        return render(request, 'polls/forms/PriceCalculator.html', {'form': form})
 # Kdyz dorazime k tomuhle view s GET metodou, tak se vytvoří prázdná instance formu a uloží se contextu templatu a vyrenderuje se
 # Kdyz s POST, tak vytvoří form a nahraje data z requestu
 

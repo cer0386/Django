@@ -1,5 +1,5 @@
 from django import forms
-from .models import Customer, Car, Model,  Reservation, Employee
+from .models import Customer, Car, Model, ReservForm, Reservation, Employee
 
 class DateInput(forms.DateInput):
     input_type = 'date'
@@ -38,7 +38,7 @@ class ReservationForm(forms.ModelForm):
     returnD = forms.DateField(label='Return')
 
     class Meta:
-        model = Reservation
+        model = ReservForm
         fields = '__all__'
 
 
@@ -54,16 +54,4 @@ class ReservationApproved(forms.ModelForm):
     class Meta:
         model = Reservation
         fields = ['employee', 'reservationNumber']
-
-
-class PriceCalculator(forms.ModelForm):
-    cars = forms.ModelMultipleChoiceField(queryset=Car.object.all())
-
-    class Meta:
-        model = Car
-        widgets = {
-            'bought': DateInput(),
-            'stk': DateInput(),
-        }
-
 
