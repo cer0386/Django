@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
 from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
-from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved
+from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved, PriceCalculator
 from django.views.generic import TemplateView
 from django.shortcuts import redirect
 
@@ -123,3 +123,26 @@ def reservation(request):
         form = ReservationForm()
         return render(request, 'polls/forms/reservation.html', {'form': form})
 
+
+def calculator(request):
+    result = 0
+    cars = Car.objects.order_by('-spz')[:5]
+    if request.method == 'POST':
+        form = PriceCalculator(request.POST)
+
+        if form.is_valid():
+            form = form.save(commit=False)
+            return calc_output(form)
+        else:
+            return HttpResponse('<h1>Something goes wrong...</h1>')
+    else:
+        form = PriceCalculator()
+        return render(request, 'polls/forms/PriceCalculator.html', {'form': form, 'result': result, 'cars': cars})
+
+
+def calc_output(form):
+    if form.Dfrom == form.Dto:
+        result = form.Dprice
+    else:
+        result = (form.Dto.day - form.Dfrom.day) * form.Dprice
+    return HttpResponse('Finnal price: %s'% result)

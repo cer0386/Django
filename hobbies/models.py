@@ -4,6 +4,7 @@ from django.core.validators import MinLengthValidator
 import datetime
 from django import forms
 
+
 # Create your models here.
 
 class Position(models.Model):
@@ -11,6 +12,7 @@ class Position(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class Employee(models.Model):
     name = models.CharField(max_length=50)
@@ -21,6 +23,7 @@ class Employee(models.Model):
 
     def __str__(self):
         return self.name + ' ' + self.surname + ' - ' + self.position.name
+
 
 class Customer(models.Model):
     driverLicense = models.CharField(max_length=8, validators=[MinLengthValidator(8)], primary_key=True)
@@ -42,8 +45,8 @@ class Model(models.Model):
     def __str__(self):
         return self.brand + ' ' + self.type
 
-class Car(models.Model):
 
+class Car(models.Model):
     spz = models.CharField(max_length=7, validators=[MinLengthValidator(7)], primary_key=True)
     model = models.ForeignKey(Model, on_delete=models.CASCADE)
     bought = models.DateField('Car was bought')
@@ -57,8 +60,8 @@ class Car(models.Model):
 
 class Reservation(models.Model):
     reservationNumber = models.IntegerField(primary_key=True)
-    #customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
-    #employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
+    # customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    # employee = models.ForeignKey(Employee, on_delete=models.CASCADE)
     customer = models.CharField(max_length=150)
     employee = models.CharField(max_length=150)
     cars = models.ManyToManyField(Car)
@@ -79,3 +82,8 @@ class ReservForm(models.Model):
     def __str__(self):
         return "%s - %s" % (self.reservationID_temp, self.customer)
 
+
+class PriceCalc(models.Model):
+    Dfrom = models.DateField('Pickup date')
+    Dto = models.DateField('Return date')
+    Dprice = models.IntegerField()
