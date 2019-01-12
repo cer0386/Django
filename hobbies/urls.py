@@ -9,6 +9,7 @@ urlpatterns = [
     path('forms/CustomerRegistration/', views.registration, name='registration'),
     path('forms/AddCar/', views.add_car, name='add_car'),
     path('forms/AddModel/', views.add_car, name='add_model'),
+    #path('forms/PriceCalculator/', views.calculator, name='calculator'),
     path('car/<slug:car_id>/', views.car_detail, name='car_detail'),
     path('customer/<slug:customer_id>/', views.customer_detail, name='customer_detail'),
     path('reservation/<int:reservation_id>/', views.reservation_detail, name='reservation_detail'),
