@@ -1,5 +1,5 @@
 from django import forms
-from .models import Customer, Car, Model, ReservForm, Reservation, Employee
+from .models import Customer, Car, Model,  Reservation, Employee
 
 class DateInput(forms.DateInput):
     input_type = 'date'
@@ -38,7 +38,7 @@ class ReservationForm(forms.ModelForm):
     returnD = forms.DateField(label='Return')
 
     class Meta:
-        model = ReservForm
+        model = Reservation
         fields = '__all__'
 
 
