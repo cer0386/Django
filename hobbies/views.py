@@ -1,8 +1,9 @@
+from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, BadHeaderError
 from django.http import HttpResponse
 from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
-from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved, PriceCalculator
+from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved, PriceCalculator, ContactForm
 from django.views.generic import TemplateView
 from django.shortcuts import redirect
 
@@ -146,3 +147,24 @@ def calc_output(form):
     else:
         result = (form.Dto.day - form.Dfrom.day) * form.Dprice
     return HttpResponse('Finnal price: %s'% result)
+
+
+def email(request):
+    if request.method == 'GET':
+        form = ContactForm()
+    else:
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(subject, message, from_email, ['kernolog@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return HttpResponse('Success! Thank you for your message.')
+    return render(request, "polls/forms/ContactMail.html", {'form': form})
+
+
+def email_success(request):
+    return HttpResponse('Success! Thank you for your message.')
