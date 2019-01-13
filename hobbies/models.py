@@ -37,6 +37,9 @@ class Customer(models.Model):
     def __str__(self):
         return self.driverLicense
 
+    def nameSurname(self):
+        return "%s  %s" % (self.name, self.surname)
+
 
 class Model(models.Model):
     brand = models.CharField(max_length=50)
@@ -87,3 +90,18 @@ class PriceCalc(models.Model):
     Dfrom = models.DateField('Pickup date')
     Dto = models.DateField('Return date')
     Dprice = models.IntegerField()
+
+
+class Comment(models.Model):
+    car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name='comments')
+    author = models.ForeignKey(Customer, on_delete= models.CASCADE, related_name='author')
+    text = models.TextField()
+    created_date = models.DateTimeField(default=timezone.now)
+    approved_comment = models.BooleanField(default= False)
+
+    def approve(self):
+        self.approved_comment = True
+        self.save()
+
+    def __str__(self):
+        return self.text
