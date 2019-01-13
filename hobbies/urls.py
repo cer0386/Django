@@ -10,7 +10,8 @@ urlpatterns = [
     path('forms/AddModel/', views.add_car, name='add_model'),
     path('forms/PriceCalculator/', views.calculator, name='calculator'),
     path('forms/ContactMail/', views.email, name='email'),
-
+    path('car/<slug:pk>/comment/', views.add_comment_to_car, name='add_comment_to_car'),
+    path('car/edit/<slug:pk>/', views.car_edit, name='car_edit'),
     path('car/<slug:car_id>/', views.car_detail, name='car_detail'),
     #url(r'^polls/car/detail/(?P<spz>\d+)$', views.car_detail, name='car_detail'),
     path('customer/<slug:customer_id>/', views.customer_detail, name='customer_detail'),
