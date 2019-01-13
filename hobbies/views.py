@@ -1,10 +1,10 @@
+from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponse
+from django.http import HttpResponse, BadHeaderError
 from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
-from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved, PriceCalculator, CommentForm
-from django.views.generic.edit import UpdateView
+from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved, PriceCalculator, CommentForm, \
+    ContactForm
 from django.shortcuts import redirect
-
 
 # Create your views here.
 def index(request):
@@ -144,7 +144,25 @@ def calc_output(form):
         result = form.Dprice
     else:
         result = (form.Dto.day - form.Dfrom.day) * form.Dprice
-    return HttpResponse('Finnal price: %s' % result)
+    return HttpResponse('Finnal price: %s'% result)
+
+
+def email(request):
+    if request.method == 'GET':
+        form = ContactForm()
+    else:
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(subject, message, from_email, ['kernolog@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return HttpResponse('Success! Thank you for your message.')
+    return render(request, "polls/forms/ContactMail.html", {'form': form})
+
 
 def add_comment_to_car(request, pk):
     car = get_object_or_404(Car, pk=pk)

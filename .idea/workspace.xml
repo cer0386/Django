@@ -2,36 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d750f1a5-0320-4b93-857b-d355a4ac32b4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/hobbies/migrations/0002_comment_pricecalc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hobbies/templates/polls/forms/add_comment_to_car.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hobbies/templates/polls/forms/car_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hobbies/templates/polls/static/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hobbies/templates/polls/static/polls/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hobbies/templates/polls/static/polls/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Django-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Django-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/car/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/car/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/customer/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/customer/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/employee/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/employee/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/forms/AddCar.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/forms/AddCar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/forms/AddModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/forms/AddModel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/forms/CustomerRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/forms/CustomerRegistration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/forms/PriceCalculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/forms/PriceCalculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/forms/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/forms/reservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/model/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/model/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/position/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/position/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/reservation/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/templates/polls/reservation/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies/views.py" afterDir="false" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hobbies/templates/polls/forms/ContactMail.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/Django-project.iml" afterPath="$PROJECT_DIR$/.idea/Django-project.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/hobbies/forms.py" afterPath="$PROJECT_DIR$/hobbies/forms.py" />
+      <change beforePath="$PROJECT_DIR$/hobbies/templates/polls/index.html" afterPath="$PROJECT_DIR$/hobbies/templates/polls/index.html" />
+      <change beforePath="$PROJECT_DIR$/hobbies/urls.py" afterPath="$PROJECT_DIR$/hobbies/urls.py" />
+      <change beforePath="$PROJECT_DIR$/hobbies/views.py" afterPath="$PROJECT_DIR$/hobbies/views.py" />
+      <change beforePath="$PROJECT_DIR$/hobby/settings.py" afterPath="$PROJECT_DIR$/hobby/settings.py" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,83 +48,109 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hobbies/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="169" column="9" lean-forward="true" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
+            <state relative-caret-position="-1008">
+              <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding>
-                <element signature="e#0#54#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hobbies/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/static/polls/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/car/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/car_edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/add_comment_to_car.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hobby/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hobbies/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            <state relative-caret-position="273">
+              <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactMail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/ContactMail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hobbies/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="car_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/car_edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hobby/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddCar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/AddCar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hobbies/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="57" column="15" lean-forward="false" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <marker date="1547406003424" expanded="true" signature="722:1146" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PriceCalculator.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/PriceCalculator.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,7 +161,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -182,34 +190,32 @@
         <option value="$PROJECT_DIR$/hobbies/templates/polls/employee.html" />
         <option value="$PROJECT_DIR$/hobbies/templates/polls/employee_detail.html" />
         <option value="$PROJECT_DIR$/hobbies/templates/polls/car_detail.html" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/employee/detail.html" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/reservation/detail.html" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/car/detail.html" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/model/detail.html" />
         <option value="$PROJECT_DIR$/hobbies/templates/polls/customer.html" />
         <option value="$PROJECT_DIR$/hobbies/templates/polls/customer/customer.html" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/position/detail.html" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/customer/detail.html" />
         <option value="$PROJECT_DIR$/hobbies/templates/polls/NewReservation.html" />
         <option value="$PROJECT_DIR$/hobbies/templates/forms.py" />
         <option value="$PROJECT_DIR$/hobbies/templates/polls/CustomerRegistration.html" />
         <option value="$PROJECT_DIR$/hobbies/templates/polls/Success.html" />
         <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/hobbies/admin.py" />
-        <option value="$PROJECT_DIR$/hobbies/models.py" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/add_comment_to_car.html" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/AddCar.html" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/AddModel.html" />
         <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/CustomerRegistration.html" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/PriceCalculator.html" />
         <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/reservation.html" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/customer/detail.html" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/employee/detail.html" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/model/detail.html" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/position/detail.html" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/reservation/detail.html" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/index.html" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/static/polls/style.css" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/AddModel.html" />
+        <option value="$PROJECT_DIR$/hobbies/admin.py" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/AddCar.html" />
+        <option value="$PROJECT_DIR$/hobbies/models.py" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/PriceCalculator.html" />
         <option value="$PROJECT_DIR$/hobby/settings.py" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/car_edit.html" />
-        <option value="$PROJECT_DIR$/hobbies/forms.py" />
-        <option value="$PROJECT_DIR$/hobbies/templates/polls/car/detail.html" />
         <option value="$PROJECT_DIR$/hobbies/urls.py" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/forms/ContactMail.html" />
+        <option value="$PROJECT_DIR$/hobbies/forms.py" />
         <option value="$PROJECT_DIR$/hobbies/views.py" />
+        <option value="$PROJECT_DIR$/hobbies/templates/polls/index.html" />
       </list>
     </option>
   </component>
@@ -223,10 +229,22 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,12 +261,6 @@
               <item name="Django-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django" type="462c0819:PsiDirectoryNode" />
               <item name="hobbies" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="hobbies" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -257,14 +269,6 @@
               <item name="hobbies" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="polls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="hobbies" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="polls" type="462c0819:PsiDirectoryNode" />
-              <item name="car" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Django-project" type="b2602c69:ProjectViewProjectNode" />
@@ -277,30 +281,12 @@
             <path>
               <item name="Django-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="hobbies" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="polls" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="hobbies" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="polls" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="polls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
               <item name="hobby" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,7 +309,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="470" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../cizi/autopujcovna" />
+    <property name="last_opened_file_path" value="D:/cizi/autopujcovna" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -351,7 +337,6 @@
   </component>
   <component name="RunManager" selected="Python.manage">
     <configuration name="makemigrations" type="PythonConfigurationType" factoryName="Python">
-      <module name="Django-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -362,18 +347,14 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="Django-project" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
       <option name="PARAMETERS" value="makemigrations" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python">
-      <module name="Django-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -384,18 +365,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Django-project" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="migrate" type="PythonConfigurationType" factoryName="Python">
-      <module name="Django-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -406,18 +384,14 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <module name="Django-project" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Django-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -428,22 +402,23 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Django-project" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hobbies/views.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.manage" />
-      <item itemvalue="Python.makemigrations" />
-      <item itemvalue="Python.migrate" />
-      <item itemvalue="Python.views" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.manage" />
+      <item index="1" class="java.lang.String" itemvalue="Python.makemigrations" />
+      <item index="2" class="java.lang.String" itemvalue="Python.migrate" />
+      <item index="3" class="java.lang.String" itemvalue="Python.views" />
     </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -520,31 +495,37 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="manage.py@Django-project" weight="0.32936078" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49583334" visible="true" weight="0.20801733" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49479166" weight="0.18453039" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50416666" side_tool="true" weight="0.20883977" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1984375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18453039" sideWeight="0.5072917" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18453039" sideWeight="0.49270833" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20110497" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20883977" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18453039" sideWeight="0.49479166" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20883977" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1984375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,20 +566,9 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Nothing at al.." />
@@ -610,6 +580,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="trying run it" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager />
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="request.user" />
@@ -621,6 +592,76 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/AddModel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/AddCar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="54" column="15" lean-forward="false" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1547406003424" expanded="true" signature="722:1146" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/PriceCalculator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/untitled/venv/Lib/site-packages/django/core/handlers/exception.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/untitled/venv/Lib/site-packages/django/urls/conf.py" />
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/detail.html" />
@@ -635,14 +676,14 @@
     <entry file="file://$PROJECT_DIR$/hobbies/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" selection-end-line="5" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/template/loader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -651,18 +692,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        <state relative-caret-position="385">
+          <caret line="57" column="15" lean-forward="false" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+            <marker date="1547406003424" expanded="true" signature="722:1146" ph="..." />
           </folding>
         </state>
       </provider>
@@ -670,108 +709,107 @@
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/shortcuts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="143" selection-start-line="143" selection-end-line="143" />
+          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
+          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="360" selection-start-line="360" selection-end-line="360" />
+          <caret line="360" column="0" lean-forward="false" selection-start-line="360" selection-start-column="0" selection-end-line="360" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/AddCar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/AddModel.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="93" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="93" />
+          <caret line="8" column="93" lean-forward="false" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/CustomerRegistration.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+          <caret line="8" column="93" lean-forward="false" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/PriceCalculator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+        <state relative-caret-position="462">
+          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/reservation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+          <caret line="8" column="93" lean-forward="false" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/customer/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="93" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
+          <caret line="7" column="93" lean-forward="false" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/employee/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="93" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
+          <caret line="7" column="93" lean-forward="false" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/model/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+          <caret line="8" column="93" lean-forward="false" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/position/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="93" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+          <caret line="8" column="93" lean-forward="false" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/reservation/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="93" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
+          <caret line="7" column="93" lean-forward="false" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
         </state>
       </provider>
     </entry>
@@ -789,20 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hobby/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/static/polls/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -813,50 +837,73 @@
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/add_comment_to_car.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="41" />
+          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/car_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="420">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/car/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="28" column="77" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+          <caret line="28" column="77" lean-forward="false" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hobbies/urls.py">
+    <entry file="file://$PROJECT_DIR$/hobby/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="511">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/forms/ContactMail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="386">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hobbies/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="169" column="9" lean-forward="true" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
+        <state relative-caret-position="-1008">
+          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/templates/polls/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hobbies/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
