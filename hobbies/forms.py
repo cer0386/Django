@@ -29,6 +29,13 @@ class CarForm(forms.ModelForm):
             'stk': DateInput(),
         }
 
+class CarEditForm(forms.ModelForm):
+    class Meta:
+        model = Car
+        fields = ['stk', 'nOAccidents', 'pricePerDay']
+        widgets = {
+            'stk': DateInput(),
+        }
 
 
 class ReservationForm(forms.ModelForm):

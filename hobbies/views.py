@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 from .models import Reservation, Employee, Car, Model, Customer, Position, ReservForm
-from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved, PriceCalculator, CommentForm
+from .forms import CustormerForm, CarForm, ReservationForm, ReservationApproved, PriceCalculator, CommentForm, CarEditForm
 from django.views.generic.edit import UpdateView
 from django.shortcuts import redirect
 
@@ -163,10 +163,10 @@ def add_comment_to_car(request, pk):
 def car_edit(request, pk):
     car = get_object_or_404(Car, pk=pk)
     if request.method == 'POST':
-        form = CarForm(request.POST, instance=car)
+        form = CarEditForm(request.POST, instance=car)
         if form.is_valid():
             car = form.save()
             return render(request, 'polls/car/detail.html', {'car': car})
     else:
-        form = CarForm(instance=car)
+        form = CarEditForm(instance=car)
     return render(request, 'polls/forms/car_edit.html', {'form': form})
