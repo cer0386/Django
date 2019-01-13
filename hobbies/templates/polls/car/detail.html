@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>{{ car }}</title>
 </head>
 <body>
@@ -14,6 +22,21 @@
     <li>{{ car.nOAccidents }}</li>
     <li>{{ car.pricePerDay }}</li>
 </ul>
+
+<hr>
+
+<a class="btn btn-default" href="{% url 'add_comment_to_car' pk=car.pk %}">Add comment</a>
+<a class="btn btn-default" href="{% url 'car_edit' pk=car.pk %}">Edit Car</a>
+
+{% for comment in car.comments.all %}
+    <div class="comment">
+        <div class="date">{{ comment.created_date }}</div>
+        <strong>{{ comment.author.nameSurname }}</strong>
+        <p>{{ comment.text|linebreaks }}</p>
+    </div>
+{% empty %}
+    <p>No comments here yet :(</p>
+{% endfor %}
 
 </body>
 </html>
